@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="bot">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="-0.0427928980183269 -0.00226223546623056 0.00230365614902583"
+        rpy="0 0 0" />
+      <mass
+        value="8.4528937730285" />
+      <inertia
+        ixx="0.123435459807924"
+        ixy="0.000587297353673634"
+        ixz="0.00588416540236371"
+        iyy="0.0858059161230582"
+        iyz="1.84157324153893E-05"
+        izz="0.124759601311524" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="file://my_workspace/src/bot_pkg1/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="file://my_workspace/src/bot_pkg1/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="left_wheel1">
+    <inertial>
+      <origin
+        xyz="-5.5511E-17 -0.02 8.3267E-17"
+        rpy="0 0 0" />
+      <mass
+        value="1.805" />
+      <inertia
+        ixx="0.006755"
+        ixy="2.8818E-17"
+        ixz="3.724E-19"
+        iyy="0.013029"
+        iyz="-3.2837E-17"
+        izz="0.006755" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="file://my_workspace/src/bot_pkg1/meshes/left_wheel1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="file://my_workspace/src/bot_pkg1/meshes/left_wheel1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="leftwheel1"
+    type="continuous">
+    <origin
+      xyz="0.50671 0.2526 -0.4152"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="left_wheel1" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      effort="10"
+      velocity="10" />
+    <dynamics
+      damping="0.1"
+      friction="0.2" />
+  </joint>
+  <link
+    name="left_wheel2">
+    <inertial>
+      <origin
+        xyz="0 -0.0199999999999986 -1.38777878078145E-17"
+        rpy="0 0 0" />
+      <mass
+        value="1.80503347504655" />
+      <inertia
+        ixx="0.00675503694144918"
+        ixy="-3.52930394689193E-22"
+        ixz="-1.74411014923877E-19"
+        iyy="0.0130287316228859"
+        iyz="3.59256991528957E-18"
+        izz="0.00675503694144918" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="file://my_workspace/src/bot_pkg1/meshes/left_wheel2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="file://my_workspace/src/bot_pkg1/meshes/left_wheel2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="leftwheel2"
+    type="continuous">
+    <origin
+      xyz="0.04408 0.2526 -0.4138"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="left_wheel2" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      effort="10"
+      velocity="10" />
+    <dynamics
+      damping="0.1"
+      friction="0.2" />
+  </joint>
+  <link
+    name="left_wheel3">
+    <inertial>
+      <origin
+        xyz="0.00060834 -0.019988 -0.00035751"
+        rpy="0 0 0" />
+      <mass
+        value="1.805" />
+      <inertia
+        ixx="0.0067608"
+        ixy="-0.00019071"
+        ixz="-3.4111E-06"
+        iyy="0.013021"
+        iyz="0.00011208"
+        izz="0.006757" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="file://my_workspace/src/bot_pkg1/meshes/left_wheel3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="file://my_workspace/src/bot_pkg1/meshes/left_wheel3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="leftwheel3"
+    type="continuous">
+    <origin
+      xyz="-0.41884 0.25258 -0.46081"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="left_wheel3" />
+    <axis
+      xyz="-0.030417 0.99938 0.017875" />
+    <limit
+      effort="10"
+      velocity="10" />
+    <dynamics
+      damping="0.1"
+      friction="0.2" />
+  </joint>
+  <link
+    name="right_wheel1">
+    <inertial>
+      <origin
+        xyz="-1.1102E-16 0.02 6.9389E-17"
+        rpy="0 0 0" />
+      <mass
+        value="1.805" />
+      <inertia
+        ixx="0.006755"
+        ixy="-2.9058E-17"
+        ixz="2.4817E-19"
+        iyy="0.013029"
+        iyz="2.9027E-17"
+        izz="0.006755" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="file://my_workspace/src/bot_pkg1/meshes/right_wheel1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="file://my_workspace/src/bot_pkg1/meshes/right_wheel1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="rightwheel1"
+    type="continuous">
+    <origin
+      xyz="0.50671 -0.2526 -0.4152"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="right_wheel1" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      effort="10"
+      velocity="10" />
+    <dynamics
+      damping="0.1"
+      friction="0.2" />
+  </joint>
+  <link
+    name="right_wheel2">
+    <inertial>
+      <origin
+        xyz="0 0.02 -1.3878E-17"
+        rpy="0 0 0" />
+      <mass
+        value="1.805" />
+      <inertia
+        ixx="0.006755"
+        ixy="5.3857E-20"
+        ixz="5.7577E-19"
+        iyy="0.013029"
+        iyz="1.3306E-19"
+        izz="0.006755" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="file://my_workspace/src/bot_pkg1/meshes/right_wheel2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="file://my_workspace/src/bot_pkg1/meshes/right_wheel2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="rightwheel2"
+    type="continuous">
+    <origin
+      xyz="0.04408 -0.2526 -0.4138"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="right_wheel2" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      effort="10"
+      velocity="10" />
+    <dynamics
+      damping="0.1"
+      friction="0.2" />
+  </joint>
+  <link
+    name="right_wheel3">
+    <inertial>
+      <origin
+        xyz="0.00060834 0.019988 -0.00035751"
+        rpy="0 0 0" />
+      <mass
+        value="1.805" />
+      <inertia
+        ixx="0.0067608"
+        ixy="0.00019071"
+        ixz="-3.4111E-06"
+        iyy="0.013021"
+        iyz="-0.00011208"
+        izz="0.006757" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="file://my_workspace/src/bot_pkg1/meshes/right_wheel3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="file://my_workspace/src/bot_pkg1/meshes/right_wheel3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="rightwheel3"
+    type="continuous">
+    <origin
+      xyz="-0.41884 -0.25258 -0.46081"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="right_wheel3" />
+    <axis
+      xyz="0.030417 0.99938 -0.017875" />
+    <limit
+      effort="10"
+      velocity="10" />
+    <dynamics
+      damping="0.1"
+      friction="0.2" />
+  </joint>
+</robot>
